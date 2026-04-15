@@ -26,7 +26,7 @@ export const siteModel = {
     { label: 'SERVICES', href: '#/services' },
     { label: 'ABOUT', href: '#' },
     { label: 'CAREERS', href: '#' },
-    { label: 'CONTACT', href: '#' },
+    { label: 'CONTACT', href: '#/contact' },
   ],
   locale: 'DE',
   hero: {
@@ -371,7 +371,7 @@ export const siteModel = {
     subtitle:
       'Benefit from our first-class service: spare parts, maintenance, inspection and individual optimisation.',
     contactLine:
-      'Our team of experts ensures maximum availability and efficiency for your system. You can reach us at service@kroenert.de or +49 40 853 93 380.',
+      'Our team of experts ensures maximum availability and efficiency for your system. You can reach us at colorsregroupin@gmail.com, 9599301190 (ANIRUDH TYAGI), or 9810348214 (ABHISHEK TYAGI).',
     cards: [
       {
         title: 'SPARE & WARE PARTS',
@@ -442,17 +442,22 @@ export const siteModel = {
   contact: {
     title: 'CONTACT',
     subtitle: 'What can we do for you?',
-    phone: '+49 40 853 93 01',
-    email: 'info@kroenert.de',
+    address: 'F 17, Surajpur Site B, Greater Noida',
+    phoneContacts: [
+      { number: '9599301190', name: 'ANIRUDH TYAGI' },
+      { number: '9810348214', name: 'ABHISHEK TYAGI' },
+    ],
+    email: 'colorsregroupin@gmail.com',
     privacyLabel: 'I have read and agree to the Privacy Policy.',
     submitLabel: 'Send',
   },
   footer: {
     companyName: 'SRE',
-    addressLines: ['Schuetzenstraße 105', '22761 Hamburg'],
+    addressLines: ['F 17, Surajpur Site B, Greater Noida'],
     contactTitle: 'Contact',
-    phone: '+49 40 853 93 01',
-    email: 'info@kroenert.de',
+    contactLines: ['9599301190 ANIRUDH TYAGI', '9810348214 ABHISHEK TYAGI', 'colorsregroupin@gmail.com'],
+    phone: '9599301190',
+    email: 'colorsregroupin@gmail.com',
     linkGroups: [
       {
         title: 'Group 1',

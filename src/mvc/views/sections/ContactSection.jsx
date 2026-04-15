@@ -4,11 +4,20 @@ function ContactSection({ section }) {
   const {
     title = 'CONTACT',
     subtitle = 'What can we do for you?',
+    address = '',
     phone = '+49 40 853 93 01',
+    phoneContacts = [],
     email = 'info@kroenert.de',
     privacyLabel = 'I have read and agree to the Privacy Policy.',
     submitLabel = 'Send',
   } = section ?? {}
+
+  const resolvedPhoneContacts =
+    phoneContacts.length > 0
+      ? phoneContacts
+      : phone
+        ? [{ number: phone, label: phone }]
+        : []
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -36,19 +45,30 @@ function ContactSection({ section }) {
           />
           <p className="contact-subtitle">{subtitle}</p>
 
-          <a className="contact-link" href={`tel:${phone.replace(/\s+/g, '')}`}>
-            <span className="contact-link-icon" aria-hidden="true">
-              {'☎'}
-            </span>
-            <span>{phone}</span>
-          </a>
+          {address ? <p className="contact-subtitle">{address}</p> : null}
 
-          <a className="contact-link" href={`mailto:${email}`}>
-            <span className="contact-link-icon" aria-hidden="true">
-              {'✉'}
-            </span>
-            <span>{email}</span>
-          </a>
+          {resolvedPhoneContacts.map((contact) => {
+            const dialNumber = contact.number.replace(/[^\d+]/g, '')
+            const contactLabel = contact.label ?? `${contact.number}${contact.name ? ` ${contact.name}` : ''}`
+
+            return (
+              <a className="contact-link" href={`tel:${dialNumber}`} key={`${contact.number}-${contact.name ?? ''}`}>
+                <span className="contact-link-icon" aria-hidden="true">
+                  {'☎'}
+                </span>
+                <span>{contactLabel}</span>
+              </a>
+            )
+          })}
+
+          {email ? (
+            <a className="contact-link" href={`mailto:${email}`}>
+              <span className="contact-link-icon" aria-hidden="true">
+                {'✉'}
+              </span>
+              <span>{email}</span>
+            </a>
+          ) : null}
         </div>
       </div>
 

@@ -9,7 +9,9 @@ import PackagingPage from './mvc/views/pages/PackagingPage'
 import MedicalAndPharmaPage from './mvc/views/pages/MedicalAndPharmaPage'
 import TexttilePage from './mvc/views/pages/TexttilePage'
 import HolographicPage from './mvc/views/pages/HolographicPage'
+import ContactPage from './mvc/views/pages/ContactPage'
 import {
+  getContactPageViewModel,
   getHolographicViewModel,
   getHomePageViewModel,
   getMedicalAndPharmaViewModel,
@@ -59,6 +61,10 @@ function resolvePageFromLocation() {
     return 'services'
   }
 
+  if (hash.startsWith('#/contact') || pathname.endsWith('/contact')) {
+    return 'contact'
+  }
+
   return 'home'
 }
 
@@ -72,6 +78,19 @@ function App() {
       offset: 90,
       easing: 'ease-out-cubic',
     })
+  }, [])
+
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      const previousScrollRestoration = window.history.scrollRestoration
+      window.history.scrollRestoration = 'manual'
+
+      return () => {
+        window.history.scrollRestoration = previousScrollRestoration
+      }
+    }
+
+    return undefined
   }, [])
 
   useEffect(() => {
@@ -89,6 +108,7 @@ function App() {
   }, [])
 
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
     AOS.refreshHard()
   }, [activePage])
 
@@ -125,6 +145,11 @@ function App() {
   if (activePage === 'holographic') {
     const viewModel = getHolographicViewModel()
     return <HolographicPage viewModel={viewModel} />
+  }
+
+  if (activePage === 'contact') {
+    const viewModel = getContactPageViewModel()
+    return <ContactPage viewModel={viewModel} />
   }
 
   const viewModel = getHomePageViewModel()

@@ -94,3 +94,13 @@ export function getHolographicViewModel() {
     footer: siteModel.footer,
   }
 }
+
+export function getContactPageViewModel() {
+  return {
+    brand: siteModel.brand,
+    navigation: siteModel.navigation,
+    locale: siteModel.locale,
+    contact: siteModel.contact,
+    footer: siteModel.footer,
+  }
+}

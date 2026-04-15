@@ -3,6 +3,7 @@ function FooterSection({ section }) {
     companyName = 'SRE',
     addressLines = ['Schuetzenstraße 105', '22761 Hamburg'],
     contactTitle = 'Contact',
+    contactLines = [],
     phone = '+49 40 853 93 01',
     email = 'info@kroenert.de',
     linkGroups = [],
@@ -25,8 +26,18 @@ function FooterSection({ section }) {
 
         <div className="site-footer-col">
           <p className="site-footer-heading">{contactTitle}</p>
-          <p className="site-footer-text">{phone}</p>
-          <p className="site-footer-text">{email}</p>
+          {contactLines.length > 0 ? (
+            contactLines.map((line) => (
+              <p className="site-footer-text" key={line}>
+                {line}
+              </p>
+            ))
+          ) : (
+            <>
+              <p className="site-footer-text">{phone}</p>
+              {email ? <p className="site-footer-text">{email}</p> : null}
+            </>
+          )}
         </div>
 
         {linkGroups.map((group) => (

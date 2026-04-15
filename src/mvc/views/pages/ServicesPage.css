@@ -1,5 +1,5 @@
 .services-shell {
-  background: #02254b;
+  background: #0A6843;
 }
 
 .services-shell .navbar-section {
@@ -13,9 +13,9 @@
   align-items: flex-end;
   padding: 160px 20px 52px;
   background:
-    radial-gradient(circle at 48% 34%, rgba(20, 133, 255, 0.34), rgba(3, 36, 76, 0) 56%),
-    linear-gradient(180deg, #002e59 0%, #012a53 100%);
-  border-bottom: 1px solid #00447d;
+    radial-gradient(circle at 48% 34%, rgba(126, 181, 77, 0.34), rgba(10, 104, 67, 0) 56%),
+    linear-gradient(180deg, #0A6843 0%, #0A6843 100%);
+  border-bottom: 1px solid #7EB54D;
   overflow: hidden;
 }
 
@@ -29,8 +29,8 @@
   opacity: 0.55;
   background: repeating-radial-gradient(
     circle at 100% 100%,
-    rgba(0, 132, 255, 0.6) 0,
-    rgba(0, 132, 255, 0.6) 1.5px,
+    rgba(201, 219, 59, 0.6) 0,
+    rgba(201, 219, 59, 0.6) 1.5px,
     transparent 1.5px,
     transparent 11px
   );
@@ -78,15 +78,15 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0;
-  border-top: 1px solid #00447d;
+  border-top: 1px solid #7EB54D;
 }
 
 .services-shell .services-grid .services-card {
   position: relative;
   min-height: 250px;
-  border-right: 1px solid #00447d;
-  border-bottom: 1px solid #00447d;
-  background: #032750;
+  border-right: 1px solid #7EB54D;
+  border-bottom: 1px solid #7EB54D;
+  background: #0A6843;
   overflow: hidden;
 }
 
@@ -105,7 +105,7 @@
 .services-shell .services-grid .services-card .services-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0, 22, 47, 0.08) 24%, rgba(0, 22, 47, 0.72) 100%);
+  background: linear-gradient(180deg, rgba(10, 104, 67, 0.08) 24%, rgba(10, 104, 67, 0.72) 100%);
 }
 
 .services-shell .services-grid .services-card:hover .services-card-image {
@@ -143,7 +143,7 @@
   }
 
   .services-shell .services-grid .services-card:nth-child(4n) {
-    border-right: 1px solid #00447d;
+    border-right: 1px solid #7EB54D;
   }
 
   .services-shell .services-grid .services-card:nth-child(2n) {

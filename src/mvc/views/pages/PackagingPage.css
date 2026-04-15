@@ -1,5 +1,5 @@
 .packaging-shell {
-  background: #02254b;
+  background: #0A6843;
 }
 
 .packaging-shell .navbar-section {
@@ -12,9 +12,9 @@
   display: flex;
   align-items: flex-end;
   padding-top: 116px;
-  background: #012a53;
-  border-top: 1px solid #00447d;
-  border-bottom: 1px solid #00447d;
+  background: #0A6843;
+  border-top: 1px solid #7EB54D;
+  border-bottom: 1px solid #7EB54D;
   overflow: hidden;
 }
 
@@ -28,8 +28,8 @@
   opacity: 0.52;
   background: repeating-radial-gradient(
     circle at 100% 100%,
-    rgba(0, 132, 255, 0.56) 0,
-    rgba(0, 132, 255, 0.56) 1.5px,
+    rgba(201, 219, 59, 0.56) 0,
+    rgba(201, 219, 59, 0.56) 1.5px,
     transparent 1.5px,
     transparent 12px
   );
@@ -41,7 +41,7 @@
   min-height: 64vh;
   display: grid;
   grid-template-columns: minmax(320px, 0.95fr) minmax(360px, 1fr);
-  border-top: 1px solid #00447d;
+  border-top: 1px solid #7EB54D;
 }
 
 .packaging-shell .packaging-hero .packaging-hero-panel .packaging-media-wrap {
@@ -120,7 +120,7 @@
 
 .packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-machine-trigger:hover,
 .packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-machine-trigger.is-active {
-  color: #a8d8ff;
+  color: #C9DB3B;
 }
 
 .packaging-shell
@@ -128,7 +128,7 @@
   .packaging-hero-panel
   .packaging-content
   .packaging-machine-trigger:focus-visible {
-  outline: 2px solid #8ec8ff;
+  outline: 2px solid #C9DB3B;
   outline-offset: 3px;
   border-radius: 2px;
 }
@@ -141,8 +141,8 @@
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: #f4f8ff;
-  background: #0273df;
+  color: #0A6843;
+  background: #7EB54D;
   border-radius: 4px;
   padding: 13px 18px;
   font-family: var(--font-ui);
@@ -153,13 +153,13 @@
 }
 
 .packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-cta:hover {
-  background: #0f88ff;
+  background: #C9DB3B;
   transform: translateY(-1px);
-  box-shadow: 0 12px 24px rgba(15, 136, 255, 0.32);
+  box-shadow: 0 12px 24px rgba(126, 181, 77, 0.32);
 }
 
 .packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-cta:focus-visible {
-  outline: 2px solid #8ec8ff;
+  outline: 2px solid #C9DB3B;
   outline-offset: 3px;
 }
 
@@ -171,7 +171,7 @@
 .packaging-shell .packaging-examples {
   position: relative;
   padding: 70px 24px 84px;
-  background: #012a53;
+  background: #0A6843;
   overflow: hidden;
 }
 
@@ -184,8 +184,8 @@
   opacity: 0.52;
   background: repeating-radial-gradient(
     circle at 0 0,
-    rgba(0, 132, 255, 0.56) 0,
-    rgba(0, 132, 255, 0.56) 1.5px,
+    rgba(201, 219, 59, 0.56) 0,
+    rgba(201, 219, 59, 0.56) 1.5px,
     transparent 1.5px,
     transparent 12px
   );
@@ -219,8 +219,8 @@
 .packaging-shell .packaging-examples .packaging-example-card {
   display: flex;
   flex-direction: column;
-  background: #10365c;
-  border: 1px solid #0e416f;
+  background: #0A6843;
+  border: 1px solid #7EB54D;
   min-height: 100%;
 }
 

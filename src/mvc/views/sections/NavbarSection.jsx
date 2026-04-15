@@ -42,9 +42,9 @@ function NavbarSection({ brand, navigation }) {
 
   return (
     <header className="site-header">
-      <div className="brand-wrap" aria-label={brand.name}>
+      <a className="brand-wrap" href="#/" aria-label={`${brand.name} home`} onClick={closeMobileMenu}>
         <img className="brand-wrap-logo" src={brand.logoImage} alt={`${brand.name} logo`} loading="eager" />
-      </div>
+      </a>
 
       <nav
         id={PRIMARY_NAV_ID}

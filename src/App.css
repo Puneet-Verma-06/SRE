@@ -16,8 +16,8 @@ body.mobile-nav-open {
   z-index: 10;
   padding: 8px 24px 10px;
   box-sizing: border-box;
-  background: linear-gradient(180deg, rgba(10, 104, 67, 0.95) 0%, rgba(10, 104, 67, 0.82) 100%);
-  border-bottom: 1px solid rgba(126, 181, 77, 0.45);
+  background: linear-gradient(180deg, rgba(126, 209, 153, 0.98) 0%, rgba(126, 209, 153, 0.9) 100%);
+  border-bottom: 1px solid rgba(10, 104, 67, 0.35);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
@@ -63,7 +63,7 @@ body.mobile-nav-open {
   .top-nav-list-item
   .top-nav-list-item-link {
   text-decoration: none;
-  color: var(--text-main);
+  color: #0A6843;
   font-family: var(--font-ui);
   font-size: 16px;
   letter-spacing: 0.4px;
@@ -78,16 +78,16 @@ body.mobile-nav-open {
   .top-nav-list
   .top-nav-list-item
   .top-nav-list-item-link:hover {
-  color: var(--brand-accent);
+  color: #7EB54D;
 }
 
 .site-shell .navbar-section .site-header .menu-toggle-btn {
   display: none;
   width: 42px;
   height: 42px;
-  border: 1px solid rgba(201, 219, 59, 0.45);
+  border: 1px solid rgba(10, 104, 67, 0.45);
   border-radius: 9px;
-  background: rgba(10, 104, 67, 0.7);
+  background: rgba(10, 104, 67, 0.14);
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -98,11 +98,11 @@ body.mobile-nav-open {
 }
 
 .site-shell .navbar-section .site-header .menu-toggle-btn:hover {
-  background: rgba(126, 181, 77, 0.78);
+  background: rgba(10, 104, 67, 0.22);
 }
 
 .site-shell .navbar-section .site-header .menu-toggle-btn:focus-visible {
-  outline: 2px solid #C9DB3B;
+  outline: 2px solid #0A6843;
   outline-offset: 2px;
 }
 
@@ -110,7 +110,7 @@ body.mobile-nav-open {
   width: 19px;
   height: 2px;
   border-radius: 999px;
-  background: #f4f8ff;
+  background: #0A6843;
   transition: transform 180ms ease, opacity 180ms ease;
 }
 
@@ -588,9 +588,9 @@ body.mobile-nav-open {
     justify-self: stretch;
     width: auto;
     overflow: hidden;
-    border: 1px solid #7EB54D;
+    border: 1px solid rgba(10, 104, 67, 0.55);
     border-radius: 10px;
-    background: linear-gradient(165deg, rgba(10, 104, 67, 0.98), rgba(10, 104, 67, 0.98));
+    background: linear-gradient(165deg, rgba(126, 209, 153, 0.98), rgba(126, 209, 153, 0.98));
     box-shadow: 0 18px 36px rgba(0, 0, 0, 0.34);
     opacity: 0;
     visibility: hidden;
@@ -616,7 +616,7 @@ body.mobile-nav-open {
   }
 
   .site-shell .navbar-section .site-header .top-nav .top-nav-list .top-nav-list-item + .top-nav-list-item {
-    border-top: 1px solid rgba(201, 219, 59, 0.22);
+    border-top: 1px solid rgba(10, 104, 67, 0.2);
   }
 
   .site-shell

@@ -1,0 +1,359 @@
+.holographic-shell {
+  background: #02254b;
+}
+
+.holographic-shell .navbar-section {
+  padding: 14px 34px 24px;
+}
+
+.holographic-shell .holographic-hero {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(320px, 0.95fr) minmax(360px, 1fr);
+  padding-top: 116px;
+  background: #012a53;
+  border-top: 1px solid #00447d;
+  border-bottom: 1px solid #00447d;
+  overflow: hidden;
+}
+
+.holographic-shell .holographic-hero .holographic-lines {
+  position: absolute;
+  left: 44%;
+  bottom: -140px;
+  width: min(520px, 44vw);
+  height: min(520px, 44vw);
+  border-radius: 50%;
+  opacity: 0.52;
+  background: repeating-radial-gradient(
+    circle at 0 50%,
+    rgba(0, 132, 255, 0.56) 0,
+    rgba(0, 132, 255, 0.56) 1.5px,
+    transparent 1.5px,
+    transparent 12px
+  );
+  pointer-events: none;
+}
+
+.holographic-shell .holographic-hero .holographic-media-wrap {
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.holographic-shell .holographic-hero .holographic-media-wrap .holographic-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform-origin: center center;
+  will-change: transform;
+  transition: transform 180ms ease;
+  display: block;
+}
+
+.holographic-shell .holographic-hero .holographic-content {
+  position: relative;
+  z-index: 1;
+  padding: 180px 64px 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.holographic-shell .holographic-hero .holographic-content .holographic-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(56px, 5.8vw, 116px);
+  line-height: 0.88;
+  letter-spacing: 0.7px;
+  max-width: 100%;
+  text-transform: uppercase;
+  color: #f3f8ff;
+}
+
+.holographic-shell .holographic-hero .holographic-content .holographic-description {
+  margin: 30px 0 0;
+  max-width: 44ch;
+  font-family: var(--font-ui);
+  font-size: clamp(20px, 1.45vw, 32px);
+  line-height: 1.33;
+  color: rgba(236, 243, 252, 0.95);
+}
+
+.holographic-shell .holographic-hero .holographic-content .holographic-machine-list {
+  margin: 30px 0 0;
+  padding-left: 28px;
+  max-width: 44ch;
+  font-family: var(--font-ui);
+  font-size: clamp(20px, 1.45vw, 32px);
+  line-height: 1.33;
+  color: rgba(236, 243, 252, 0.95);
+}
+
+.holographic-shell .holographic-hero .holographic-content .holographic-machine-list li + li {
+  margin-top: 6px;
+}
+
+.holographic-shell .holographic-hero .holographic-content .holographic-machine-trigger {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: color 140ms ease;
+}
+
+.holographic-shell .holographic-hero .holographic-content .holographic-machine-trigger:hover,
+.holographic-shell .holographic-hero .holographic-content .holographic-machine-trigger.is-active {
+  color: #a8d8ff;
+}
+
+.holographic-shell .holographic-hero .holographic-content .holographic-machine-trigger:focus-visible {
+  outline: 2px solid #8ec8ff;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.holographic-shell .holographic-hero .holographic-content .holographic-cta {
+  margin-top: 34px;
+  width: fit-content;
+  min-width: 128px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #f4f8ff;
+  background: #0273df;
+  border-radius: 4px;
+  padding: 13px 18px;
+  font-family: var(--font-ui);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  transition: background-color 140ms ease, transform 140ms ease, box-shadow 140ms ease;
+}
+
+.holographic-shell .holographic-hero .holographic-content .holographic-cta:hover {
+  background: #0f88ff;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(15, 136, 255, 0.32);
+}
+
+.holographic-shell .holographic-hero .holographic-content .holographic-cta:focus-visible {
+  outline: 2px solid #8ec8ff;
+  outline-offset: 3px;
+}
+
+.holographic-shell .holographic-hero .holographic-content .holographic-cta-arrow {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.holographic-shell .holographic-examples {
+  position: relative;
+  padding: 70px 24px 84px;
+  background: #012a53;
+  overflow: hidden;
+}
+
+.holographic-shell .holographic-examples .holographic-examples-lines {
+  position: absolute;
+  left: -180px;
+  top: -120px;
+  width: min(620px, 52vw);
+  height: min(480px, 48vw);
+  opacity: 0.52;
+  background: repeating-radial-gradient(
+    circle at 0 0,
+    rgba(0, 132, 255, 0.56) 0,
+    rgba(0, 132, 255, 0.56) 1.5px,
+    transparent 1.5px,
+    transparent 12px
+  );
+  pointer-events: none;
+}
+
+.holographic-shell .holographic-examples .holographic-examples-inner {
+  position: relative;
+  z-index: 1;
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.holographic-shell .holographic-examples .holographic-examples-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(52px, 5vw, 82px);
+  line-height: 0.92;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #f4f8ff;
+}
+
+.holographic-shell .holographic-examples .holographic-examples-grid {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px 28px;
+}
+
+.holographic-shell .holographic-examples .holographic-example-card {
+  display: flex;
+  flex-direction: column;
+  background: #10365c;
+  border: 1px solid #0e416f;
+  min-height: 100%;
+}
+
+.holographic-shell .holographic-examples .holographic-example-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.holographic-shell .holographic-examples .holographic-example-content {
+  padding: 18px 20px 16px;
+}
+
+.holographic-shell .holographic-examples .holographic-example-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(34px, 2.2vw, 42px);
+  line-height: 0.92;
+  color: #f4f8ff;
+}
+
+.holographic-shell .holographic-examples .holographic-example-description {
+  margin: 12px 0 0;
+  font-family: var(--font-ui);
+  font-size: clamp(14px, 1.02vw, 18px);
+  line-height: 1.42;
+  color: rgba(234, 243, 252, 0.9);
+}
+
+@media (max-width: 1280px) {
+  .holographic-shell .holographic-hero {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 104px;
+  }
+
+  .holographic-shell .holographic-hero .holographic-content {
+    padding: 154px 42px 72px;
+  }
+
+  .holographic-shell .holographic-hero .holographic-content .holographic-title {
+    font-size: clamp(48px, 5.6vw, 96px);
+  }
+
+  .holographic-shell .holographic-hero .holographic-content .holographic-description {
+    font-size: clamp(18px, 2vw, 26px);
+  }
+
+  .holographic-shell .holographic-hero .holographic-content .holographic-machine-list {
+    font-size: clamp(18px, 2vw, 26px);
+  }
+
+  .holographic-shell .holographic-hero .holographic-content .holographic-cta {
+    font-size: 24px;
+  }
+
+  .holographic-shell .holographic-examples {
+    padding: 62px 20px 72px;
+  }
+
+  .holographic-shell .holographic-examples .holographic-examples-title {
+    font-size: clamp(44px, 6.2vw, 66px);
+  }
+
+  .holographic-shell .holographic-examples .holographic-examples-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .holographic-shell .holographic-hero {
+    grid-template-columns: 1fr;
+    padding-top: 92px;
+  }
+
+  .holographic-shell .holographic-hero .holographic-lines {
+    left: 52%;
+    bottom: -120px;
+    width: min(480px, 68vw);
+    height: min(480px, 68vw);
+  }
+
+  .holographic-shell .holographic-hero .holographic-media-wrap {
+    min-height: 52vh;
+    max-height: 62vh;
+  }
+
+  .holographic-shell .holographic-hero .holographic-content {
+    padding: 36px 22px 44px;
+  }
+
+  .holographic-shell .holographic-hero .holographic-content .holographic-title {
+    font-size: clamp(38px, 11vw, 64px);
+  }
+
+  .holographic-shell .holographic-hero .holographic-content .holographic-description {
+    margin-top: 18px;
+    font-size: clamp(16px, 4.6vw, 22px);
+    max-width: 100%;
+  }
+
+  .holographic-shell .holographic-hero .holographic-content .holographic-machine-list {
+    margin-top: 18px;
+    padding-left: 22px;
+    max-width: 100%;
+    font-size: clamp(16px, 4.6vw, 22px);
+  }
+
+  .holographic-shell .holographic-hero .holographic-content .holographic-cta {
+    margin-top: 24px;
+    font-size: 20px;
+    padding: 11px 16px;
+  }
+
+  .holographic-shell .holographic-hero .holographic-content .holographic-cta-arrow {
+    font-size: 20px;
+  }
+
+  .holographic-shell .holographic-examples {
+    padding: 50px 14px 56px;
+  }
+
+  .holographic-shell .holographic-examples .holographic-examples-lines {
+    left: -260px;
+    top: 0;
+    width: min(500px, 74vw);
+    height: min(420px, 74vw);
+  }
+
+  .holographic-shell .holographic-examples .holographic-examples-title {
+    font-size: clamp(38px, 11vw, 56px);
+  }
+
+  .holographic-shell .holographic-examples .holographic-examples-grid {
+    margin-top: 24px;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .holographic-shell .holographic-examples .holographic-example-content {
+    padding: 14px 14px 16px;
+  }
+
+  .holographic-shell .holographic-examples .holographic-example-title {
+    font-size: clamp(30px, 8vw, 38px);
+  }
+}

@@ -1,0 +1,383 @@
+.packaging-shell {
+  background: #02254b;
+}
+
+.packaging-shell .navbar-section {
+  padding: 14px 34px 24px;
+}
+
+.packaging-shell .packaging-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding-top: 116px;
+  background: #012a53;
+  border-top: 1px solid #00447d;
+  border-bottom: 1px solid #00447d;
+  overflow: hidden;
+}
+
+.packaging-shell .packaging-hero .packaging-hero-lines {
+  position: absolute;
+  left: -120px;
+  top: -190px;
+  width: min(520px, 45vw);
+  height: min(520px, 45vw);
+  border-radius: 50%;
+  opacity: 0.52;
+  background: repeating-radial-gradient(
+    circle at 100% 100%,
+    rgba(0, 132, 255, 0.56) 0,
+    rgba(0, 132, 255, 0.56) 1.5px,
+    transparent 1.5px,
+    transparent 12px
+  );
+  pointer-events: none;
+}
+
+.packaging-shell .packaging-hero .packaging-hero-panel {
+  width: 100%;
+  min-height: 64vh;
+  display: grid;
+  grid-template-columns: minmax(320px, 0.95fr) minmax(360px, 1fr);
+  border-top: 1px solid #00447d;
+}
+
+.packaging-shell .packaging-hero .packaging-hero-panel .packaging-media-wrap {
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.packaging-shell .packaging-hero .packaging-hero-panel .packaging-media-wrap .packaging-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform-origin: center center;
+  will-change: transform;
+  transition: transform 180ms ease;
+  display: block;
+}
+
+.packaging-shell .packaging-hero .packaging-hero-panel .packaging-content {
+  position: relative;
+  z-index: 1;
+  padding: 76px 64px 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(72px, 8vw, 150px);
+  line-height: 0.84;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: #f3f8ff;
+}
+
+.packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-description {
+  margin: 24px 0 0;
+  max-width: 42ch;
+  font-family: var(--font-ui);
+  font-size: clamp(20px, 1.3vw, 26px);
+  line-height: 1.33;
+  color: rgba(236, 243, 252, 0.95);
+}
+
+.packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-machine-list {
+  margin: 24px 0 0;
+  padding-left: 28px;
+  max-width: 42ch;
+  font-family: var(--font-ui);
+  font-size: clamp(20px, 1.3vw, 26px);
+  line-height: 1.33;
+  color: rgba(236, 243, 252, 0.95);
+}
+
+.packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-machine-list li + li {
+  margin-top: 6px;
+}
+
+.packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-machine-trigger {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: color 140ms ease;
+}
+
+.packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-machine-trigger:hover,
+.packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-machine-trigger.is-active {
+  color: #a8d8ff;
+}
+
+.packaging-shell
+  .packaging-hero
+  .packaging-hero-panel
+  .packaging-content
+  .packaging-machine-trigger:focus-visible {
+  outline: 2px solid #8ec8ff;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-cta {
+  margin-top: 30px;
+  width: fit-content;
+  min-width: 128px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #f4f8ff;
+  background: #0273df;
+  border-radius: 4px;
+  padding: 13px 18px;
+  font-family: var(--font-ui);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  transition: background-color 140ms ease, transform 140ms ease, box-shadow 140ms ease;
+}
+
+.packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-cta:hover {
+  background: #0f88ff;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(15, 136, 255, 0.32);
+}
+
+.packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-cta:focus-visible {
+  outline: 2px solid #8ec8ff;
+  outline-offset: 3px;
+}
+
+.packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-cta-arrow {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.packaging-shell .packaging-examples {
+  position: relative;
+  padding: 70px 24px 84px;
+  background: #012a53;
+  overflow: hidden;
+}
+
+.packaging-shell .packaging-examples .packaging-examples-lines {
+  position: absolute;
+  left: -180px;
+  top: -120px;
+  width: min(620px, 52vw);
+  height: min(480px, 48vw);
+  opacity: 0.52;
+  background: repeating-radial-gradient(
+    circle at 0 0,
+    rgba(0, 132, 255, 0.56) 0,
+    rgba(0, 132, 255, 0.56) 1.5px,
+    transparent 1.5px,
+    transparent 12px
+  );
+  pointer-events: none;
+}
+
+.packaging-shell .packaging-examples .packaging-examples-inner {
+  position: relative;
+  z-index: 1;
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.packaging-shell .packaging-examples .packaging-examples-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(52px, 5vw, 82px);
+  line-height: 0.92;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #f4f8ff;
+}
+
+.packaging-shell .packaging-examples .packaging-examples-grid {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px 28px;
+}
+
+.packaging-shell .packaging-examples .packaging-example-card {
+  display: flex;
+  flex-direction: column;
+  background: #10365c;
+  border: 1px solid #0e416f;
+  min-height: 100%;
+}
+
+.packaging-shell .packaging-examples .packaging-example-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.packaging-shell .packaging-examples .packaging-example-content {
+  padding: 18px 20px 16px;
+}
+
+.packaging-shell .packaging-examples .packaging-example-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(34px, 2.2vw, 42px);
+  line-height: 0.92;
+  color: #f4f8ff;
+}
+
+.packaging-shell .packaging-examples .packaging-example-description {
+  margin: 12px 0 0;
+  font-family: var(--font-ui);
+  font-size: clamp(14px, 1.02vw, 18px);
+  line-height: 1.42;
+  color: rgba(234, 243, 252, 0.9);
+}
+
+@media (max-width: 1280px) {
+  .packaging-shell .packaging-hero {
+    padding-top: 104px;
+  }
+
+  .packaging-shell .packaging-hero .packaging-hero-panel {
+    min-height: 60vh;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .packaging-shell .packaging-hero .packaging-hero-panel .packaging-content {
+    padding: 58px 42px 66px;
+  }
+
+  .packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-title {
+    font-size: clamp(54px, 7.4vw, 122px);
+  }
+
+  .packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-description {
+    font-size: clamp(18px, 1.9vw, 24px);
+  }
+
+  .packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-machine-list {
+    font-size: clamp(18px, 1.9vw, 24px);
+  }
+
+  .packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-cta {
+    font-size: 24px;
+  }
+
+  .packaging-shell .packaging-examples {
+    padding: 62px 20px 72px;
+  }
+
+  .packaging-shell .packaging-examples .packaging-examples-title {
+    font-size: clamp(44px, 6.2vw, 66px);
+  }
+
+  .packaging-shell .packaging-examples .packaging-examples-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .packaging-shell .packaging-hero {
+    padding-top: 92px;
+  }
+
+  .packaging-shell .packaging-hero .packaging-hero-lines {
+    left: -140px;
+    top: -150px;
+    width: min(420px, 68vw);
+    height: min(420px, 68vw);
+  }
+
+  .packaging-shell .packaging-hero .packaging-hero-panel {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    border-top: none;
+  }
+
+  .packaging-shell .packaging-hero .packaging-hero-panel .packaging-media-wrap {
+    min-height: 50vh;
+    max-height: 62vh;
+  }
+
+  .packaging-shell .packaging-hero .packaging-hero-panel .packaging-content {
+    padding: 34px 22px 44px;
+  }
+
+  .packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-title {
+    font-size: clamp(48px, 14.5vw, 86px);
+  }
+
+  .packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-description {
+    margin-top: 18px;
+    font-size: clamp(16px, 4.2vw, 22px);
+    max-width: 100%;
+  }
+
+  .packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-machine-list {
+    margin-top: 18px;
+    padding-left: 22px;
+    max-width: 100%;
+    font-size: clamp(16px, 4.2vw, 22px);
+  }
+
+  .packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-cta {
+    margin-top: 24px;
+    font-size: 20px;
+    padding: 11px 16px;
+  }
+
+  .packaging-shell .packaging-hero .packaging-hero-panel .packaging-content .packaging-cta-arrow {
+    font-size: 20px;
+  }
+
+  .packaging-shell .packaging-examples {
+    padding: 50px 14px 56px;
+  }
+
+  .packaging-shell .packaging-examples .packaging-examples-lines {
+    left: -260px;
+    top: 0;
+    width: min(500px, 74vw);
+    height: min(420px, 74vw);
+  }
+
+  .packaging-shell .packaging-examples .packaging-examples-title {
+    font-size: clamp(38px, 11vw, 56px);
+  }
+
+  .packaging-shell .packaging-examples .packaging-examples-grid {
+    margin-top: 24px;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .packaging-shell .packaging-examples .packaging-example-content {
+    padding: 14px 14px 16px;
+  }
+
+  .packaging-shell .packaging-examples .packaging-example-title {
+    font-size: clamp(30px, 8vw, 38px);
+  }
+
+  .packaging-shell .packaging-examples .packaging-example-description {
+    font-size: clamp(16px, 4.2vw, 18px);
+  }
+}

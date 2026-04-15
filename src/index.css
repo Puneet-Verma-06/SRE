@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap');
+@import './App.css';
+
+:root {
+  --text-main: #f6f7f8;
+  --text-muted: #b7bec7;
+  --brand-accent: #dbe1e8;
+  --canvas: #05090f;
+
+  --font-display: 'Oswald', 'Arial Narrow', sans-serif;
+  --font-ui: 'Barlow Semi Condensed', 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--canvas);
+  font-family: var(--font-ui);
+  color: var(--text-main);
+}

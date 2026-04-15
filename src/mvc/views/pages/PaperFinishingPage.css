@@ -1,0 +1,359 @@
+.paper-finishing-shell {
+  background: #02254b;
+}
+
+.paper-finishing-shell .navbar-section {
+  padding: 14px 34px 24px;
+}
+
+.paper-finishing-shell .paper-finishing-hero {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(320px, 0.95fr) minmax(360px, 1fr);
+  padding-top: 116px;
+  background: #012a53;
+  border-top: 1px solid #00447d;
+  border-bottom: 1px solid #00447d;
+  overflow: hidden;
+}
+
+.paper-finishing-shell .paper-finishing-hero .paper-finishing-lines {
+  position: absolute;
+  left: 44%;
+  bottom: -140px;
+  width: min(520px, 44vw);
+  height: min(520px, 44vw);
+  border-radius: 50%;
+  opacity: 0.52;
+  background: repeating-radial-gradient(circle at 0 50%,
+      rgba(0, 132, 255, 0.56) 0,
+      rgba(0, 132, 255, 0.56) 1.5px,
+      transparent 1.5px,
+      transparent 12px);
+  pointer-events: none;
+}
+
+.paper-finishing-shell .paper-finishing-hero .paper-finishing-media-wrap {
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.paper-finishing-shell .paper-finishing-hero .paper-finishing-media-wrap .paper-finishing-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform-origin: center center;
+  will-change: transform;
+  transition: transform 180ms ease;
+  display: block;
+}
+
+.paper-finishing-shell .paper-finishing-hero .paper-finishing-content {
+  position: relative;
+  z-index: 1;
+  padding: 180px 64px 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(72px, 8vw, 162px);
+  line-height: 0.84;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: #f3f8ff;
+}
+
+.paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-description {
+  margin: 30px 0 0;
+  max-width: 44ch;
+  font-family: var(--font-ui);
+  font-size: clamp(20px, 1.45vw, 32px);
+  line-height: 1.33;
+  color: rgba(236, 243, 252, 0.95);
+}
+
+.paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-machine-list {
+  margin: 30px 0 0;
+  padding-left: 28px;
+  max-width: 44ch;
+  font-family: var(--font-ui);
+  font-size: clamp(20px, 1.45vw, 32px);
+  line-height: 1.33;
+  color: rgba(236, 243, 252, 0.95);
+}
+
+.paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-machine-list li + li {
+  margin-top: 6px;
+}
+
+.paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-machine-trigger {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: color 140ms ease;
+}
+
+.paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-machine-trigger:hover,
+.paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-machine-trigger.is-active {
+  color: #a8d8ff;
+}
+
+.paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-machine-trigger:focus-visible {
+  outline: 2px solid #8ec8ff;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-cta {
+  margin-top: 34px;
+  width: fit-content;
+  min-width: 128px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #f4f8ff;
+  background: #0273df;
+  border-radius: 4px;
+  padding: 13px 18px;
+  font-family: var(--font-ui);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  transition: background-color 140ms ease, transform 140ms ease, box-shadow 140ms ease;
+}
+
+.paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-cta:hover {
+  background: #0f88ff;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(15, 136, 255, 0.32);
+}
+
+.paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-cta:focus-visible {
+  outline: 2px solid #8ec8ff;
+  outline-offset: 3px;
+}
+
+.paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-cta-arrow {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.paper-finishing-shell .paper-finishing-examples {
+  position: relative;
+  padding: 70px 24px 84px;
+  background: #012a53;
+  overflow: hidden;
+}
+
+.paper-finishing-shell .paper-finishing-examples .paper-finishing-examples-lines {
+  position: absolute;
+  right: -210px;
+  top: 40px;
+  width: min(520px, 42vw);
+  height: min(760px, 72vh);
+  border-radius: 50% 0 0 50%;
+  opacity: 0.55;
+  background: repeating-radial-gradient(circle at 100% 50%,
+      rgba(0, 132, 255, 0.56) 0,
+      rgba(0, 132, 255, 0.56) 1.5px,
+      transparent 1.5px,
+      transparent 12px);
+  pointer-events: none;
+}
+
+.paper-finishing-shell .paper-finishing-examples .paper-finishing-examples-inner {
+  position: relative;
+  z-index: 1;
+  width: min(1000px, 100%);
+  margin: 0 auto;
+}
+
+.paper-finishing-shell .paper-finishing-examples .paper-finishing-examples-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(52px, 5vw, 82px);
+  line-height: 0.92;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #f4f8ff;
+}
+
+.paper-finishing-shell .paper-finishing-examples .paper-finishing-examples-grid {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px 28px;
+}
+
+.paper-finishing-shell .paper-finishing-examples .paper-finishing-example-card {
+  display: flex;
+  flex-direction: column;
+  background: #10365c;
+  border: 1px solid #0e416f;
+  min-height: 100%;
+}
+
+.paper-finishing-shell .paper-finishing-examples .paper-finishing-example-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.paper-finishing-shell .paper-finishing-examples .paper-finishing-example-content {
+  padding: 18px 20px 16px;
+}
+
+.paper-finishing-shell .paper-finishing-examples .paper-finishing-example-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(36px, 2.3vw, 44px);
+  line-height: 0.92;
+  color: #f4f8ff;
+}
+
+.paper-finishing-shell .paper-finishing-examples .paper-finishing-example-description {
+  margin: 12px 0 0;
+  font-family: var(--font-ui);
+  font-size: clamp(14px, 1.02vw, 18px);
+  line-height: 1.42;
+  color: rgba(234, 243, 252, 0.9);
+}
+
+@media (max-width: 1280px) {
+  .paper-finishing-shell .paper-finishing-hero {
+    grid-template-columns: 1fr 1fr;
+    padding-top: 104px;
+  }
+
+  .paper-finishing-shell .paper-finishing-hero .paper-finishing-content {
+    padding: 154px 42px 72px;
+  }
+
+  .paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-title {
+    font-size: clamp(54px, 7.4vw, 122px);
+  }
+
+  .paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-description {
+    font-size: clamp(18px, 2vw, 26px);
+  }
+
+  .paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-machine-list {
+    font-size: clamp(18px, 2vw, 26px);
+  }
+
+  .paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-cta {
+    font-size: 24px;
+  }
+
+  .paper-finishing-shell .paper-finishing-examples {
+    padding: 62px 20px 72px;
+  }
+
+  .paper-finishing-shell .paper-finishing-examples .paper-finishing-examples-title {
+    font-size: clamp(44px, 6.2vw, 66px);
+  }
+
+  .paper-finishing-shell .paper-finishing-examples .paper-finishing-examples-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  .paper-finishing-shell .paper-finishing-hero {
+    grid-template-columns: 1fr;
+    padding-top: 92px;
+  }
+
+  .paper-finishing-shell .paper-finishing-hero .paper-finishing-lines {
+    left: 52%;
+    bottom: -120px;
+    width: min(480px, 68vw);
+    height: min(480px, 68vw);
+  }
+
+  .paper-finishing-shell .paper-finishing-hero .paper-finishing-media-wrap {
+    min-height: 52vh;
+    max-height: 62vh;
+  }
+
+  .paper-finishing-shell .paper-finishing-hero .paper-finishing-content {
+    padding: 36px 22px 44px;
+  }
+
+  .paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-title {
+    font-size: clamp(48px, 15vw, 86px);
+  }
+
+  .paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-description {
+    margin-top: 18px;
+    font-size: clamp(16px, 4.6vw, 22px);
+    max-width: 100%;
+  }
+
+  .paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-machine-list {
+    margin-top: 18px;
+    padding-left: 22px;
+    max-width: 100%;
+    font-size: clamp(16px, 4.6vw, 22px);
+  }
+
+  .paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-cta {
+    margin-top: 24px;
+    font-size: 20px;
+    padding: 11px 16px;
+  }
+
+  .paper-finishing-shell .paper-finishing-hero .paper-finishing-content .paper-finishing-cta-arrow {
+    font-size: 20px;
+  }
+
+  .paper-finishing-shell .paper-finishing-examples {
+    padding: 50px 14px 56px;
+  }
+
+  .paper-finishing-shell .paper-finishing-examples .paper-finishing-examples-lines {
+    right: -260px;
+    top: 180px;
+    width: min(420px, 68vw);
+    height: min(620px, 66vh);
+  }
+
+  .paper-finishing-shell .paper-finishing-examples .paper-finishing-examples-title {
+    font-size: clamp(38px, 11vw, 56px);
+  }
+
+  .paper-finishing-shell .paper-finishing-examples .paper-finishing-examples-grid {
+    margin-top: 24px;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .paper-finishing-shell .paper-finishing-examples .paper-finishing-example-content {
+    padding: 14px 14px 16px;
+  }
+
+  .paper-finishing-shell .paper-finishing-examples .paper-finishing-example-title {
+    font-size: clamp(30px, 8vw, 38px);
+  }
+
+  .paper-finishing-shell .paper-finishing-examples .paper-finishing-example-description {
+    font-size: clamp(16px, 4.2vw, 18px);
+  }
+}
